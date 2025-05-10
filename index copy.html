@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <div class="header-top">
+            <h1>my weather</h1>
+            <input type="text" placeholder="Cherkasy, Ukraine">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index copy.html">Today</a></li>
+                <li><a href="index.html" class="active">5-day forecast</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="block">
+            <div class="block-header">
+                <h3>Current weather</h3>
+                <h3>01/05/2025</h3>
+            </div>
+
+            <div class="block-content">
+                <div class="icon">
+                    <img src="2682848_day_forecast_sun_sunny_weather_icon.svg">
+                    <h2>Sunny</h2>
+                </div>
+                <div class="temp">
+                    <h2>29 .C</h2>
+                    <p>Real feel 30 .C</p>
+                </div>
+                <div class="hours">
+                    <table>
+                        <tr>
+                            <td>Sunrise:</td>
+                            <td>07.04 AM</td>
+                        </tr>
+                        <tr>
+                            <td>Sunset:</td>
+                            <td>05.11 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Duration:</td>
+                            <td>010.06 HR</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="block">
+            <div class="dlock-header">
+                <h3>Hourly</h3>
+            </div>
+            <table> 
+                <thead> 
+                    <tr> 
+                        <th>Today</th> 
+                        <th>7pm</th> 
+                        <th>8pm</th> 
+                        <th>9pm</th> 
+                        <th>10pm</th> 
+                        <th>11pm</th> 
+                        <th>12am</th> 
+                    </tr> 
+                    <tr> 
+                        <td></td> 
+                        <td><img src="2682848_day_forecast_sun_sunny_weather_icon.svg"></td> 
+                        <td><img src="2682848_day_forecast_sun_sunny_weather_icon.svg"></td> 
+                        <td><img src="2682848_day_forecast_sun_sunny_weather_icon.svg"></td> 
+                        <td><img src="2682848_day_forecast_sun_sunny_weather_icon.svg"></td> 
+                        <td><img src="2682848_day_forecast_sun_sunny_weather_icon.svg"></td> 
+                        <td><img src="2682848_day_forecast_sun_sunny_weather_icon.svg"></td> 
+                    </tr> 
+                </thead> 
+                <tbody> 
+                    <tr> 
+                        <td>Forecast:</td> 
+                        <td>Sunny </td> 
+                        <td>Sunny</td> 
+                        <td>Clearc</td> 
+                        <td>Clear</td> 
+                        <td>Clear</td> 
+                        <td>Clear</td> 
+                    </tr>
+                    <tr> 
+                        <td>Temp:</td> 
+                        <td>Sunny </td> 
+                        <td>Sunny</td> 
+                        <td>Clearc</td> 
+                        <td>Clear</td> 
+                        <td>Clear</td> 
+                        <td>Clear</td> 
+                    </tr>
+                    <tr> 
+                        <td>Feel:</td> 
+                        <td>Sunny </td> 
+                        <td>Sunny</td> 
+                        <td>Clearc</td> 
+                        <td>Clear</td> 
+                        <td>Clear</td> 
+                        <td>Clear</td> 
+                    </tr>
+                    <tr> 
+                        <td>Wind:</td> 
+                        <td>Sunny </td> 
+                        <td>Sunny</td> 
+                        <td>Clearc</td> 
+                        <td>Clear</td> 
+                        <td>Clear</td> 
+                        <td>Clear</td> 
+                    </tr>
+                </tbody> 
+            </table>
+        </div>
+        
+
+        <div class="block">
+            <div class="weather-container">
+                <div class="header">NEARBY PLACES</div>
+                <div class="weather-grid">
+                    <div class="weather-box">
+                    <span>Baladzary</span>
+                    <span>☀️ 36°C</span>
+                    </div>
+                    <div class="weather-box">
+                    <span>Bailov</span>
+                    <span>☀️ 29°C</span>
+                    </div>
+                    <div class="weather-box">
+                    <span>Badamdar</span>
+                    <span>☀️ 36°C</span>
+                    </div>
+                    <div class="weather-box">
+                    <span>Cherni Gorod</span>
+                    <span>☀️ 29°C</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <script>
+        document.querySelectorAll("nav ul a").forEach(link => {
+        link.onclick = function () {
+            document.querySelectorAll("nav ul a").forEach(l => l.classList.remove("active"));
+            this.classList.add("active");
+        };
+        });
+    </script>
+
+</body>
+</html>
